@@ -5,14 +5,16 @@ import { PagesModule } from './pages/pages.module';
 // Rutas
 import { APP_ROUTES } from './app.routes';
 
+//servcios
+ServiceModule
 // modulos
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 // import { IncrementadorComponent } from './componentes/incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
